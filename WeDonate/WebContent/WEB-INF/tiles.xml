@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+   "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+   "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/pages/baseLayout.jsp">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="menu" value="/pages/menu.jsp" />
+		<put-attribute name="body" value="/pages/body.jsp" />
+	</definition>
+
+	<definition name="upload.success" extends="baseLayout">
+		<put-attribute name="title" value="User Information" />
+		<put-attribute name="body" value="/pages/uploadDataSuccess.jsp" />
+	</definition>
+
+	<definition name="donate.success" extends="baseLayout">
+		<put-attribute name="title" value="Add User Information" />
+		<put-attribute name="body" value="/pages/donIndex.jsp" />
+	</definition>
+
+	<definition name="testlogin.success" extends="baseLayout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/pages/login.jsp" />
+	</definition>
+	
+	<definition name="login.success" extends="baseLayout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/pages/menumain.jsp" />
+	</definition>
+	
+	<definition name="login.error" extends="baseLayout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/pages/login2.jsp" />
+	</definition>
+	
+	<definition name="book.success" extends="baseLayout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/pages/book.jsp" />
+	</definition>
+	
+		<definition name="blood.success" extends="baseLayout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/pages/blood.jsp" />
+	</definition>
+	
+</tiles-definitions>
